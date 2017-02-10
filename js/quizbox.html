@@ -1,0 +1,27 @@
+<div id="quizBox" class="contentBox">
+	<h2>Guess the country</h2>
+	
+	<p>You got only ONE chance to use streetview, so choose carefully!</p>
+	<!--<div id="quizChoices" ng-class="{'active': {{ firstAnswer }} == true }">-->
+	<!-- <pre>Sort by = {{propertyName}}; reverse = {{reverse}}</pre> -->
+	<table id="quizChoices">
+		<thead>
+			<tr>
+				<th ng-click="sortBy('country')" >Country</th>
+				<th ng-click="sortBy('lat')">Latitude</th>
+				<th ng-click="sortBy('lng')">Longitude</th>
+			</tr>
+		</thead>
+		<tr ng-repeat="item in countries | orderBy:propertyName:reverse">
+			<td>
+				<label>
+					<input class="countryRadioBtn data" type="radio" name="country" value="{{ item.country }}" 
+					ng-click="userReply(item.country)"> {{ item.country }} 
+				</label>	
+			</td>
+			<td>{{ item.lat }}</td > 
+			<td>{{ item.lng }}</td >
+		</label>
+		</tr>
+	</table>	
+</div>

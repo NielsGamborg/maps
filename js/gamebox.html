@@ -1,0 +1,17 @@
+<div id="wrapper">
+	
+	<map-box lat="{{lat}}" lng="{{lng}}" init-map="initMap()"></map-box>
+						
+	<quiz-box countries-obj="countries" on-country-select="onQuizBoxAnswer(answer)" first-answer="{{ firstAnswer }}"></quiz-box>
+	
+	<result-box shown-country="{{ shownCountry }}" user-answer = "{{ userAnswer }}"></result-box>
+	
+	<game-buttons reload-map="reloadMap()" reset-score="resetScore()" reload-page="reloadPage()"></game-buttons>
+	
+	<score-box correct="{{correct}}" wrong="{{ wrong }}" total="{{ correct + wrong }}" 
+	shown-country="{{ shownCountry }}"></score-box>
+	
+	
+				
+</div>
+	

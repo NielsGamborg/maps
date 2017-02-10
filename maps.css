@@ -1,0 +1,89 @@
+body{
+	background:#f0f0f0;
+	padding: 2em;
+	font-family: arial, helvetica, sans-serif;
+}
+
+#wrapper{
+	background:white;
+	margin:0 auto;
+	padding: 2em;
+	max-width:1200px;
+	overflow: hidden
+}
+
+p{
+	margin: 1em 0
+}
+
+ul{
+	list-style:none;
+	margin:2em 0;
+	padding:0
+}
+
+table{
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+}
+
+td,th{
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc; 
+	padding: .3em .6em;
+}
+
+td:first-child{
+	width: 40%;
+}
+
+#mapBox{
+	float:left;
+	width: 65%; 
+	height: 600px;
+}
+
+.contentBox{
+	float:left;
+	margin-left: 4%;
+	width: 31%;
+}
+
+#quizChoices label{
+	display: block;
+}
+
+input[type="radio"] {
+    margin: 5px 3px 3px 5px;
+}
+
+button{
+	background: #009900;
+	border: 1px solid #006600;
+	border-radius: 3px;
+	color: white;
+	font-size:18px;
+	margin: 1em 1em 1em 0;
+	padding: .2em .5em;
+}
+
+button.reset{
+	background: white;
+	border: 1px solid #333;
+	color: #555;
+}
+
+.weigtNormal{
+	font-weight: normal;
+}
+
+.discrete{
+	color: #aaa;
+	font-size: 80%;
+}
+
+#reveal-card,  #floating-panel{
+	display: none !important;
+}

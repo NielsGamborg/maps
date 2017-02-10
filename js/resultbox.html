@@ -1,0 +1,7 @@
+<div id="resultBox" class="contentBox">
+	<h3><span ng-if="userAnswer == 'null'" class="weigtNormal">???</span> 
+		<span ng-if="userAnswer == 'true'" class="weigtNormal">Correct. It was </span>
+		<span ng-if="userAnswer == 'false'" class="weigtNormal">Sorry. It was </span>
+		<span ng-if="userAnswer != 'null'">{{ shownCountry }}.</span>
+	</h3>
+</div>	
